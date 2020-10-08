@@ -1,0 +1,38 @@
+{
+  "name": "new-react-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "homepage": "https://github.com/Johndoe0914/Newportfolio",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-parser-js": "^0.5.2",
+    "nodemailer": "^6.4.11",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-particles-js": "^3.3.0",
+    "react-scripts": "^3.4.3",
+    "react-toastify": "^6.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johndoe0914/Newportfolio.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "jonathan diaz",
+  "license": "ISC"
+}

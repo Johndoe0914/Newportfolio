@@ -1,0 +1,99 @@
+/*  iphone 6 7 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .contact__form {
+    width: 350px !important;
+    margin-bottom: 50px;
+  }
+  .contact__form > form {
+    width: 320px;
+  }
+
+  .contact__form > form > input {
+    width: 315px !important;
+  }
+}
+/*iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .contact__form {
+    width: 350px !important;
+  }
+  .contact__form > form {
+    width: 320px;
+  }
+
+  .contact__form > form > input {
+    width: 315px !important;
+  }
+}
+
+/* Desktop */
+.contact {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  background-image: url(https://images.pexels.com/photos/1574181/pexels-photo-1574181.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.contact > h3 {
+  text-align: center;
+}
+.contact > h1 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  width: 600px;
+  height: 420px;
+  background-color: black;
+  box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.contact__form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form > form > input {
+  width: 500px;
+  height: 25px;
+}
+
+.contact__form > form > textarea {
+  height: 100px;
+}
+
+.contact__form > form > button {
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+  height: 35px;
+}
+
+.contact__form > form > button:hover {
+  cursor: pointer;
+  background-color: darkslategray;
+}
+
+.contact__form > form > label {
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+  color: white;
+}

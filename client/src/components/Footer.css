@@ -1,0 +1,28 @@
+.footer {
+  height: 20vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__links {
+}
+
+.footer__links > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer__links > ul > li {
+  padding-right: 30px;
+}
+
+.footer__links > span > h6 {
+  position: relative;
+  bottom: 5px;
+  color: gray;
+}

@@ -1,0 +1,69 @@
+/*  iphone 6 7 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .offer {
+    height: 120vh !important;
+  }
+  .offer__description {
+    width: 350px !important;
+    margin-top: 18vh !important;
+  }
+}
+
+/*iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .offer__description {
+    width: 350px !important;
+    margin-top: 25vh !important;
+
+    padding: 5px;
+  }
+}
+
+.offer {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/4215112/pexels-photo-4215112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.offer > h1 {
+  margin-top: 85px;
+  text-align: center;
+}
+
+.offer__description {
+  font-weight: 500;
+  text-align: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+  border: 1px solid black;
+  line-height: 30px;
+  background: black;
+  padding: 10px;
+  box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.offer__description > a > button {
+  height: 35px;
+  margin-top: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  background-color: teal;
+}
+
+.offer__description > a > button:hover {
+  cursor: pointer;
+  background-color: darkslategray;
+}
