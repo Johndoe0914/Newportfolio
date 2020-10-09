@@ -3,7 +3,7 @@ import { useAlert } from "react-alert";
 import { Zoom, Bounce } from "react-reveal";
 
 import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+
 import "./Contact.css";
 
 const Contact = () => {
@@ -13,6 +13,8 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const baseUrl = 'https://us-central1-jonathandiazportfolio-b23ac.cloudfunctions.net/api/form'
 
   const { name, email, message } = formdata;
 
@@ -27,15 +29,19 @@ const Contact = () => {
       return console.log("fields are emptys");
     }
 
-    const form = await axios
-      .post("/api/form", { name, email, message })
-      .catch((err) => console.log(err));
+    const form = await axios({
+      method: 'post',
+      url: baseUrl,
+      data:{name, email ,message}
+    }).catch((err) => console.log(err));
+      // .post("/api/form", { name, email, message })
+      
 
     if (form.status === 200) {
       setFormData({ name: "", email: "", message: "" });
       alert.show("Message Sent Successfully");
     }
-  };
+  }
 
   return (
     <div className='contact'>

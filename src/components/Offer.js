@@ -12,7 +12,7 @@ const Offer = () => {
         <div className='offer__description'>
           Full Stack Web Development using MongoDB, Express, React, Node.js
           (MERN) with an emphasis on Frontend web development. Experienced in
-          building CRUD applications, RESTful APIs using Node.js and express,
+          building CRUD applications, RESTful APIs using Node.js and Express,
           User Auth and oAuth with PassportJS and JWT. Also have experience with
           Firebase, Firestore, React Context Api . Common libraries of use:
           Axios, Redux, Mongoose, Express, body-parser, react-router. Common use
