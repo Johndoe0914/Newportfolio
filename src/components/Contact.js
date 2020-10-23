@@ -6,7 +6,7 @@ import axios from "axios";
 
 import "./Contact.css";
 
-const Contact = () => {
+const Contact = ({id}) => {
   const alert = useAlert();
   const [formdata, setFormData] = useState({
     name: "",
@@ -14,8 +14,8 @@ const Contact = () => {
     message: "",
   });
 
-  const baseUrl = 'https://us-central1-jonathandiazportfolio-b23ac.cloudfunctions.net/api/form'
-
+  const baseUrl = 'https://us-central1-jonathandiazportfolio-b23ac.cloudfunctions.net/sendMail';
+ const testUrl = 'http://localhost:5001/jonathandiazportfolio-b23ac/us-central1/sendMail';
   const { name, email, message } = formdata;
 
   const handleChange = (e) => {
@@ -28,13 +28,8 @@ const Contact = () => {
       alert.show("Please fill out the contact fields");
       return console.log("fields are emptys");
     }
-
-    const form = await axios({
-      method: 'post',
-      url: baseUrl,
-      data:{name, email ,message}
-    }).catch((err) => console.log(err));
-      // .post("/api/form", { name, email, message })
+const form = await axios.post(`${baseUrl}`, formdata).catch((err) => console.log(err));
+   
       
 
     if (form.status === 200) {
@@ -44,7 +39,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='contact'>
+    <div id={id}className='contact'>
       <h1>Contact me</h1>
       <h3>Want to work together or have questions please contact me</h3>
 

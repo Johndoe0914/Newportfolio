@@ -3,9 +3,9 @@ import { Zoom, Bounce } from "react-reveal";
 import Avatar from "@material-ui/core/Avatar";
 import "./About.css";
 
-const About = () => {
+const About = ({id}) => {
   return (
-    <div className='about'>
+    <div id={id} className='about'>
       <h1>About me</h1>
 
       <div className='about__info'>
@@ -49,7 +49,7 @@ const About = () => {
             </span>
 
             <span>
-              <img src='https://img.icons8.com/ios/100/000000/react-native.png' />
+              <img src='https://www.unicoconnect.com/wp-content/uploads/2020/05/1200px-React-icon.svg.png' />
               <h3>React </h3>
             </span>
             <span>

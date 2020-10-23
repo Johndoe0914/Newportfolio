@@ -1,13 +1,13 @@
 import React from "react";
 import Card from "./Card";
-import { Zoom, Bounce } from "react-reveal";
+import { Zoom } from "react-reveal";
 
 import Reactjs from "../reactJS.json";
 import "./Projects.css";
 
-const Projects = () => {
+const Projects = ({id}) => {
   return (
-    <div className='projects'>
+    <div id={id} className='projects'>
       <h1>Projects</h1>
 
       <div className='projects__cards'>

@@ -4,9 +4,9 @@ import { Zoom, Bounce } from "react-reveal";
 
 import "./Offer.css";
 
-const Offer = () => {
+const Offer = ({id}) => {
   return (
-    <div className='offer'>
+    <div id={id} className='offer'>
       <h1>What Do I Offer ?</h1>
       <Bounce>
         <div className='offer__description'>

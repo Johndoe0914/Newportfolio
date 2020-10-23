@@ -22,9 +22,13 @@ const Landing = () => {
             <h1>Junior Full Stack Developer</h1>
           </strong>
           <br />
-          <a href='#about'>
-            <button>View More -></button>
-          </a>
+         
+          <div className="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+  
+</div>
         </div>
       </Zoom>
       <div className='landing__Image'></div>
