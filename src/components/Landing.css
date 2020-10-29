@@ -1,5 +1,15 @@
 /*  iphone 6 7 8 */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .text {
+    position: absolute !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    top: 170px !important;
+    z-index: 100 !important;
+  }
+
   .overlay {
     width: 100% !important;
     height: 100% !important;
