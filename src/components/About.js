@@ -18,8 +18,7 @@ const About = ({id}) => {
         </Zoom>
         <Bounce>
           <div className='about__description'>
-            Welcome to my portfolio, My name is Jonathan Diaz i am 21 years old
-            and also a UCF Coding bootcamp graduate .I currently reside in
+            Welcome to my portfolio, My name is Jonathan Diaz im a UCF Coding bootcamp graduate .I currently reside in
             Kissimmee, Florida. I am a young motivated individual who wants to
             strive and do his best in everything he does. I would describe
             myself as being a proactive ,dynamic and a team player. My goal is

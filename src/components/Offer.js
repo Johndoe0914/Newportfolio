@@ -15,7 +15,7 @@ const Offer = ({id}) => {
           building CRUD applications, RESTful APIs using Node.js and Express,
           User Auth and oAuth with PassportJS and JWT. Also have experience with
           Firebase, Firestore, React Context Api . Common libraries of use:
-          Axios, Redux, Mongoose, Express, body-parser, react-router. Common use
+          Axios, Mongoose, Express, body-parser, react-router. Common use
           of UI libraries: Bootstrap 4, React-Bootstrap, MaterializeCSS,
           Material-UI.
           <br />
